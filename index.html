@@ -9,20 +9,29 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
-    <!--navigation menu-->
+    <!-- Navigation Menu -->
     <nav>
         <div class="nav-container">
             <div class="logo">
-                Gautam <span class="logo-span"> Kumar</span>
-        </div>
-        <div class="links">
-            <div class="link"> <a href="#">Home</a></div>
-            <div class="link"> <a href="#about">About</a></div>
-            <div class="link"> <a href="#skills">Skills</a></div>
-            <div class="link"> <a href="#services">Projects</a></div>
-            <div class="link"> <a href="#contact">Contact</a></div>
+                Gautam <span class="logo-span">Kumar</span>
             </div>
- </nav>
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#skills">Skills</a></div>
+                <div class="link"><a href="#services">Projects</a></div>
+                <div class="link"><a href="#contact">Contact</a></div>
+            </div>
+            <!-- Hamburger Button -->
+            <div class="hamburg">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    
+</body>
+</html>
 
 
     <!--Profile Picture-->
@@ -241,6 +250,23 @@
                             </footer>
                     </footer>
                    
+                    
+                    <script>
+    // Toggle the dropdown menu
+    const hamburg = document.querySelector('.hamburg');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburg.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Close the menu when a link is clicked (optional)
+    navLinks.querySelectorAll('.link a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
 
 
                   
