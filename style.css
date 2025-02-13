@@ -635,3 +635,87 @@ footer .text span a:hover{
 }
 
 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .dropdown {
+        transform: translateY(0);
+    }
+
+    .dropdown .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-container .image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .main-container .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content button {
+        width: 80%;
+    }
+
+    .about .about-details {
+        flex-direction: column;
+    }
+
+    .about .left,
+    .about .right {
+        width: 100%;
+    }
+
+    .about .left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-details .right {
+        margin-top: 20px;
+    }
+
+    .skills-details {
+        flex-direction: column;
+    }
+
+    .skills-details .text,
+    .skills-details .boxes {
+        width: 100%;
+    }
+
+    .skills-details .box {
+        width: 100%;
+    }
+
+    .services .boxes .box {
+        width: 100%;
+    }
+
+    .contact-form-container {
+        width: 90%;
+    }
+
+    footer .text span {
+        font-size: 14px;
+    }
+}
