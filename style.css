@@ -106,30 +106,6 @@ nav{
     color: #00FFFF;
 }
 
-.dropdown{
-    z-index:100;
-    position: absolute;
-    top: 0;
-    transform: translateY(-500px);
-    width: 100%;
-    height:auto;
-    backdrop-filter:blur(4px)brightness(40%);
-    box-shadow:0 0 20px black;
-    transition:0.2s linear;
-}
-
-.dropdown .links a{
-    display: flex;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    padding: 15px 0;
-    align-items: center;
-    transition:0.2s linear;
-}
-.dropdown.links a:hover{
-    background-color: #00FFFF;
-}
 
 section{
     width:100%;
@@ -621,19 +597,6 @@ footer .text span a:hover{
     text-decoration: underline;
 }
 
-.scroll-button a{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: #fff;
-    background: #00FFFF;
-    padding: 7px 12px;
-    font-size: 18px;
-    border-radius: 6px;
-    box-shadow: rgba(0,0,0,0.15);
-    display: none;
-}
-
 
 
 /* Responsive Design */
@@ -719,3 +682,6 @@ footer .text span a:hover{
         font-size: 14px;
     }
 }
+
+
+
